@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  padding: 24px 0;
+}
+
+.logo {
+  margin-right: 90px;
+
+  color: var(--color-black);
+  font-size: 20.861px;
+  font-family: var(--fonts-heading);
+
+  letter-spacing: -0.417px;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  padding: 16px 0;
+
+  transition: color var(--main-transition);
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: var(--color-black);
+}
+
+.navItem:not(:last-child) {
+  margin-right: 30px;
+}
+
+.userList {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-cyan-light);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.button {
+  color: var(--color-black);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
