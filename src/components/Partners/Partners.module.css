@@ -1,0 +1,8 @@
+.wrapper {
+  background-color: var(--color-accent);
+}
+
+.partnerList {
+  display: flex;
+  align-items: center;
+}

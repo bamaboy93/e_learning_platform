@@ -1,18 +1,25 @@
 .header {
+  position: relative;
+  margin-top: 36px;
   display: flex;
   align-items: center;
-
-  padding: 24px 0;
+  justify-content: space-between;
 }
 
-.logo {
-  margin-right: 90px;
+.header::after {
+  content: "";
+  position: absolute;
 
-  color: var(--color-black);
-  font-size: 20.861px;
-  font-family: var(--fonts-heading);
-
-  letter-spacing: -0.417px;
+  right: -60%;
+  width: 857px;
+  height: 857px;
+  border-radius: 857px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(109, 94, 234, 0.4) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  overflow: hidden;
 }
 
 .navList {
@@ -22,42 +29,36 @@
 
 .navLink {
   padding: 16px 0;
-
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
   transition: color var(--main-transition);
 }
 
 .navLink:hover,
 .navLink:focus {
-  color: var(--color-black);
+  color: var(--color-accent);
 }
 
 .navItem:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 24px;
 }
 
-.userList {
+.socialsList {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
-.user {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
+.socialsItem:not(:last-child) {
+  margin-right: 17px;
 }
 
-.avatar {
-  width: 32px;
-  height: 32px;
-  background-color: var(--color-cyan-light);
-  border-radius: 50%;
-  margin-right: 8px;
+.socialsLink {
+  transition: color var(--main-transition);
 }
 
-.button {
-  color: var(--color-black);
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+.socialsLink:hover,
+.socialsLink:focus {
+  color: var(--color-accent);
 }
