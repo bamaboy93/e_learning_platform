@@ -1,25 +1,12 @@
 .header {
-  position: relative;
-  margin-top: 36px;
+  padding-top: 36px;
+  padding-bottom: 85px;
+}
+
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header::after {
-  content: "";
-  position: absolute;
-
-  right: -60%;
-  width: 857px;
-  height: 857px;
-  border-radius: 857px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(109, 94, 234, 0.4) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  overflow: hidden;
 }
 
 .navList {

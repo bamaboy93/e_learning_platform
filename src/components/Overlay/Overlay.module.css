@@ -1,0 +1,36 @@
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -30%;
+  left: -20%;
+  width: 857px;
+  height: 857px;
+  border-radius: 857px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(109, 94, 234, 0.4) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -40%;
+  right: -15%;
+  width: 857px;
+  height: 857px;
+  border-radius: 857px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(109, 94, 234, 0.4) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}

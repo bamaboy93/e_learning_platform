@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 :root {
-  --fonts-heading: "Dela Gothic One", cursive;
-
   --color-white: #fff;
   --color-black: #000;
   --color-grey: #575757;
   --color-accent: #ff4262;
   --color-accent-green: #cdfe02;
+
+  --text-shadow-title: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
 
   --shadow-first: 0px 11.449064254760742px 11.449064254760742px 0px
       rgba(52, 41, 39, 0.04),

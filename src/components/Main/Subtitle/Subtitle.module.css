@@ -1,0 +1,6 @@
+.subtitle {
+  color: var(--color-accent);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+}
