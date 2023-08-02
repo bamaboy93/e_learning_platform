@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Container from "../Container/Container";
 import image from "../../assets/chars.png";
 import explorer from "../../assets/scrollExplorer.png";
@@ -14,9 +16,13 @@ const Hero = () => {
               Digital marketplace for crypto collectibles and NFTs. Buy, sell,
               and discover exclusive digital assets today.
             </h2>
-            <button className={s.button} type="button">
+            <motion.button
+              whileTap={{ scale: 1.1 }}
+              className={s.button}
+              type="button"
+            >
               connect wallet
-            </button>
+            </motion.button>
           </div>
           <div className={s.wrapperImage}>
             <img className={s.image} src={image} alt="nft heroes" />{" "}

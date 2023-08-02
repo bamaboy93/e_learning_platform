@@ -1,3 +1,98 @@
 .about {
+  position: relative;
   padding-top: 120px;
+  padding-bottom: 220px;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 191px;
+
+  background-image: url(../../assets/effect.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.wrapper {
+  width: 728px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+
+.titleWrapper {
+  text-align: center;
+  width: 616px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+
+.subinfo {
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.info {
+  width: 506px;
+  align-self: flex-end;
+}
+
+.desc {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.button {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+  border-radius: 60px;
+
+  background: linear-gradient(273deg, #ff4060 0%, #ff81c5 52.08%, #6d5eea 100%);
+  overflow: hidden;
+
+  padding: 18px 42px;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background-color: #120a14;
+  border-radius: 59px;
+}
+
+.button::after {
+  content: attr(data);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(273deg, #ff4060 0%, #ff81c5 52.08%, #6d5eea 100%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
