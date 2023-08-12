@@ -14,27 +14,27 @@ const Header = () => {
           <nav>
             <ul className={s.navList}>
               <li className={s.navItem}>
-                <a href="" className={s.navLink}>
+                <a href="/" className={s.navLink}>
                   Home
                 </a>
               </li>
               <li className={s.navItem}>
-                <a href="" className={s.navLink}>
+                <a href="#about" className={s.navLink}>
                   about
                 </a>
               </li>
               <li className={s.navItem}>
-                <a href="" className={s.navLink}>
+                <a href="#chars" className={s.navLink}>
                   characters
                 </a>
               </li>
               <li className={s.navItem}>
-                <a href="" className={s.navLink}>
+                <a href="#faq" className={s.navLink}>
                   <p>FAQ</p>
                 </a>
               </li>
               <li className={s.navItem}>
-                <a href="" className={s.navLink}>
+                <a href="#community" className={s.navLink}>
                   <p>community</p>
                 </a>
               </li>
@@ -43,17 +43,29 @@ const Header = () => {
 
           <ul className={s.socialsList}>
             <li className={s.socialsItem}>
-              <a className={s.socialsLink} href="/">
+              <a
+                className={s.socialsLink}
+                href="https://github.com/"
+                target="blank"
+              >
                 <RxGithubLogo size={22} />
               </a>
             </li>
             <li className={s.socialsItem}>
-              <a className={s.socialsLink} href="/">
+              <a
+                className={s.socialsLink}
+                href="https://twitter.com/"
+                target="blank"
+              >
                 <RxTwitterLogo size={22} />
               </a>
             </li>
             <li className={s.socialsItem}>
-              <a className={s.socialsLink} href="/">
+              <a
+                className={s.socialsLink}
+                href="https://instagram.com/"
+                target="blank"
+              >
                 <RxInstagramLogo size={22} />
               </a>
             </li>

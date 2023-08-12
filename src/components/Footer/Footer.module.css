@@ -1,0 +1,10 @@
+.footer {
+  padding: 56px 0;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}

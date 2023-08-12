@@ -1,13 +1,26 @@
 import { useState } from "react";
-import { HiPlus } from "react-icons/hi";
+import { HiPlus, HiMinus } from "react-icons/hi";
+import { useTransition, useSpring, animated } from "react-spring";
 
 import s from "./Faq.module.css";
 
-const Question = ({ id, title, info }) => {
+const Question = ({ title, info }) => {
   const [expanded, setExpanded] = useState(false);
 
+  const openAnimation = useSpring({
+    from: { opacity: "0", maxHeight: "86px" },
+    to: { opacity: "1", maxHeight: expanded ? "300px" : "86px" },
+    config: { duration: "200" },
+  });
+
+  const transitions = useSpring({
+    from: { opacity: "0" },
+    to: { opacity: "1" },
+    config: { duration: "200" },
+  });
+
   return (
-    <li key={id} className={s.faqItem}>
+    <animated.li className={s.faqItem} style={openAnimation}>
       <div className={s.mainItem}>
         <h4 className={s.question}>{title}</h4>
         <button
@@ -15,11 +28,19 @@ const Question = ({ id, title, info }) => {
           type="button"
           onClick={() => setExpanded(!expanded)}
         >
-          <HiPlus size={32} />
+          {expanded ? (
+            <animated.i style={transitions}>
+              <HiMinus size={32} />
+            </animated.i>
+          ) : (
+            <animated.i style={transitions}>
+              <HiPlus size={32} />
+            </animated.i>
+          )}
         </button>
       </div>
-      {expanded && <p className={s.answer}>{info}</p>}
-    </li>
+      <p className={s.answer}>{info}</p>
+    </animated.li>
   );
 };
 

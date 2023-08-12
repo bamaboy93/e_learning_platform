@@ -7,14 +7,14 @@ import s from "./Faq.module.css";
 
 const Faq = () => {
   return (
-    <section className={s.faq}>
+    <section id="faq" className={s.faq}>
       <Container>
         <h3 className={s.subtitle}>FAQ</h3>
         <Title text="Your questions, answered." />
 
         <ul className={s.faqList}>
           {data.map(({ id, title, info }) => (
-            <Question title={title} info={info} />
+            <Question key={id} title={title} info={info} />
           ))}
         </ul>
       </Container>

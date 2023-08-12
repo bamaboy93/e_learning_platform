@@ -7,7 +7,7 @@ import s from "./About.module.css";
 
 const About = () => {
   return (
-    <section className={s.about}>
+    <section id="about" className={s.about}>
       <Container>
         <div className={s.wrapper}>
           <div className={s.titleWrapper}>

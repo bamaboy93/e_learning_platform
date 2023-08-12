@@ -11,7 +11,7 @@ import s from "./Chars.module.css";
 
 const Chars = () => {
   return (
-    <section className={s.chars}>
+    <section id="chars" className={s.chars}>
       <Container>
         <Subtitle text="Find your" />
         <Title text="Favourite character" />
